@@ -1,4 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/universal:2-linux
 
-RUN apt-get update && \
-apt-get upgrade -y
+COPY  . .
+# RUN apt-get update && \
+# apt-get upgrade -y
+RUN pip install -r requirements.txt
+
+
